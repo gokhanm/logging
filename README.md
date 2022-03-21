@@ -2,7 +2,7 @@
 Golang logging library with logrus and graylog hook support
 
 ```go
-import log "github.com/gokhanm/go-utils/logging"
+import log "github.com/gokhanm/logging"
 
 func main() {
     // you can set your own logrus formatter. text, json ..
@@ -20,7 +20,7 @@ func main() {
 
 Multi-custom logrus fields and aync graylog hook example
 ```go
-import log "github.com/gokhanm/go-utils/logging"
+import log "github.com/gokhanm/logging"
 
 func main() {
 
@@ -28,7 +28,7 @@ func main() {
     log.Initialize(nil)
 
     // you can have fields always attached to log statements by SetDefaultFields in an application
-    fields := map[string]interface{}{"name": "gokhan", "app": "go-utils"}
+    fields := map[string]interface{}{"name": "gokhan", "app": "appName"}
     log.SetDefaultFields(fields)
 
     // also if you use graylog log management system
