@@ -18,7 +18,7 @@ func main() {
 }
 ```
 
-Multi-custom logrus fields and aync graylog hook example
+Multi-custom logrus fields and async graylog hook example
 ```go
 import log "github.com/gokhanm/logging"
 
